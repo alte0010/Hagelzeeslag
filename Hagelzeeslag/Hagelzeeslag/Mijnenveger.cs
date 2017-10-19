@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace Hagelzeeslag
 {
-    class Mijnenveger
+    public class Mijnenveger: Warship
     {
+        public Mijnenveger()
+        {
+            lives = 2;
+        }
     }
 }

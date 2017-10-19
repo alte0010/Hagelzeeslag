@@ -6,11 +6,13 @@ using System.Threading.Tasks;
 
 namespace Hagelzeeslag
 {
-    public class Kruiser: Warship
+    public abstract class Warship
     {
-        public Kruiser()
+        protected int lives;
+
+        public bool IsSunk()
         {
-            lives = 4;
+            return !(lives > 0);
         }
     }
 }
