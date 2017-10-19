@@ -23,5 +23,21 @@ namespace UnitTestProject
             // Assert
             Assert.IsFalse(isSunk);
         }
+
+        [TestMethod]
+        public void TestIfShipIsSunkAfterTwoRockets()
+        {
+            // Arrange
+            var ship = new Mijnenveger();
+
+            // Act
+            ship.AcceptRocket();
+            ship.AcceptRocket();
+
+            bool isSunk = ship.IsSunk();
+
+            // Assert
+            Assert.IsTrue(isSunk);
+        }
     }
 }

@@ -14,5 +14,11 @@ namespace Hagelzeeslag
         {
             return !(lives > 0);
         }
+
+        public void AcceptRocket()
+        {
+            //lives--;
+            lives = lives - 1;
+        }
     }
 }
